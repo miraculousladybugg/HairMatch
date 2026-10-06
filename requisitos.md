@@ -9,8 +9,10 @@ Criar um sistema onde a pessoa vai responder um questionário relacionado ao tip
 - Frontend: HTML5, PHP, CSS, Tailwind CSS
 
 #### Regras de negócio (CORE)
-Tratar senhas de usuários com hash bcript
-O sistema deve ter uma página de históricos e manter sempre os logs de qualquer alteração feita por qualquer usuário, para auditorias futuras.
+Fazer o login na plataforma
+Responder o questionário
+Buscar o produto desejado dentre os selecionados pós questionário
+Avaliar o produto
 
 ##### Regras Globais
 - Use sempre PDO para conexão e queries no MySQL para evitar SQL Injections
