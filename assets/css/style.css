@@ -1,0 +1,76 @@
+/* Estilos Complementares - HairMatch */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap');
+
+:root {
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-serif: 'Playfair Display', Georgia, serif;
+}
+
+body {
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.font-serif {
+    font-family: var(--font-serif);
+}
+
+/* Animações suaves */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(6px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInRight {
+    from { opacity: 0; transform: translateX(20px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes pulseGlow {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(225, 29, 72, 0.4); }
+    50% { box-shadow: 0 0 0 10px rgba(225, 29, 72, 0); }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.3s ease-out forwards;
+}
+
+.animate-slide-in {
+    animation: slideInRight 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-pulse-glow {
+    animation: pulseGlow 2.5s infinite;
+}
+
+/* Barra de rolagem suave */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}
+
+/* Gradientes de destaque HairMatch */
+.bg-hair-gradient {
+    background: linear-gradient(135deg, #be185d 0%, #881337 100%);
+}
+
+.bg-match-gradient {
+    background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+}
+
+.text-gradient {
+    background: linear-gradient(135deg, #be185d 0%, #db2777 50%, #f59e0b 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
